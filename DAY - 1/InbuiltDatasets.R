@@ -10,7 +10,7 @@ library(arules)
 library(Matrix)
 
 
-# Data Overviw
+# Data Overview
 head(Income)
 head(readingSkills)
 head(Groceries)
@@ -19,3 +19,4 @@ head(Groceries)
 # Data Statistics
 summary(Groceries)
 summary(Income)
+summary(readingSkills)
