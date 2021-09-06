@@ -7,6 +7,6 @@ dim(df)
 # Structure of Columns(Datatypes)
 str(df)
 
-# Descriptive Stastics for the dataset
+# Descriptive Statistics
 summary(df)
 
