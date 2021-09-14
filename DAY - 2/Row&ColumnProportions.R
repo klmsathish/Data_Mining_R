@@ -24,13 +24,13 @@ table_newspaper <- table(df_students$newspaper_read)
 newspaper_gender_table <- table(df_students$newspaper_read,df_students$Gender)
 newspaper_gender_table
 
-# Row Proportions
-prop.table(newspaper_gender_table)
+# Row Proportions(prop.tab;e( ,1 - for column wise))
+prop.table(newspaper_gender_table,1)
 prop_table <- prop.table(newspaper_gender_table,1)
 addmargins(round(100*prop_table,2))
 
 
-# Column Proportions
+# Column Proportions(prop.tab;e( ,2 - for column wise))
 prop.table(newspaper_gender_table,2)
 round(100*prop.table(newspaper_gender_table,2),2)
 addmargins(round(prop.table(newspaper_gender_table,2),2),1)

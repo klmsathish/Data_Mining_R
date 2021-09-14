@@ -9,7 +9,7 @@ install.packages("reshape")
 df_sharks <- read.csv("Day - 2/Data/sharks.csv")
 df_sharks
 
-# COlumns Description
+# Columns Description
 # Common Name : Categorical(Nominal)
 # Scientific  : Categorical(Nominal)
 # Length and mass : Continuous
@@ -23,7 +23,7 @@ dim(df_sharks)
 # Descriptive statistics
 summary(df_sharks)
 
-# Statisctics for Continuous data
+# Statistics for Continuous data
 
 # Mean
 mean(df_sharks$LENGTH..m.)
@@ -40,5 +40,6 @@ sci_name_table <- table(df_sharks$SCIENTIFIC.NAME)
 
 # Percentage of each category
 prop.table(sci_name_table)
+
 
 
