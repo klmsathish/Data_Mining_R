@@ -10,9 +10,9 @@ c <-c('wide','narrow','narrow')
 
 # Creating a dataframe by combining vectors
 df <- data.frame(a,b,c)
-
+df
 # applying on hot function
-one_hot(df)
+one_hot(df$a)
 
 # Creating a new table
 df = data.table(ID = 1:4,
@@ -25,3 +25,5 @@ one_hot(df, sparsifyNAS = TRUE)
 one_hot(df, naCols = TRUE)
 df_updated <- one_hot(df,dropCols=TRUE)
 df_updated
+
+

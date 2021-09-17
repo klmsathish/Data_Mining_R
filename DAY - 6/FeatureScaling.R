@@ -23,6 +23,7 @@ summary(data_preprocess)
 
 # Checking updated values
 data_scaled_standardize <- as.data.frame(scale(data[,c(1:4,6)]))
+data_scaled_standardize
 summary(data$Income)
 summary(data_scaled_standardize$Income)
 
